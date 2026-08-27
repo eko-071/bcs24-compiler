@@ -1,0 +1,5 @@
+build/
+bcs24
+lex.yy.c
+parser.tab.*
+*.o
