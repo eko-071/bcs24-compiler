@@ -20,7 +20,9 @@ Bcs24 source -> Flex -> tokens -> Bison -> Parsing Successful / Syntax Error -> 
 
 ## Language
 
-`BcsMain { declist stmtlist }`, decls first (`int`/`bool`), stmts `id = aexpr` `if` `while` with `;`, exprs `+` `*` and `< > <= >= == !=`. See `docs/language.md`.
+`BcsMain { declist stmtlist }`, decls first (`int`/`bool`), stmts `id = aexpr` `if` `while` with `;`, exprs `+` `*` and `< > <= >= == !=`.
+
+See [Language Specification](docs/language.md) for more details.
 
 ## Structure
 
