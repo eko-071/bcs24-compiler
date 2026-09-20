@@ -1,0 +1,12 @@
+BcsMain
+{
+bool flag; int x; int y;
+x = 1;
+y = 2;
+if (x < y) {flag = 1} else {flag = 0};
+if (x <= y) {flag = 1} else {flag = 0};
+if (x >= y) {flag = 1} else {flag = 0};
+if (x > y) {flag = 1} else {flag = 0};
+if (x == y) {flag = 1} else {flag = 0};
+if (x != y) {flag = 1} else {flag = 0}
+}

@@ -1,0 +1,11 @@
+BcsMain
+{
+int i; int total;
+i = 0;
+total = 0;
+while (i != 10)
+{
+  if (i == 5) {total = total + 100} else {total = total + i};
+  i = i + 1
+}
+}

@@ -1,0 +1,5 @@
+BcsMain
+{
+int x;
+x = 1 @ 2
+}
