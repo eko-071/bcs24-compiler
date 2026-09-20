@@ -2,8 +2,7 @@
 #include "parser.tab.h"
 
 extern FILE *yyin;
-extern int yylex(void);
-extern YYSTYPE yylval;
+extern int yyparse(void);
 
 int main(int argc, char **argv) {
     if (argc < 2) {
@@ -17,13 +16,12 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    int tok;
-    while ((tok = yylex()) != 0) {
-        printf("token %d", tok);
-        if (tok == ID)  printf(" (id=%s)", yylval.id);
-        if (tok == NUM) printf(" (num=%d)", yylval.num);
-        printf("\n");
+    if (yyparse() == 0) {
+        printf("Parsing Successful\n");
+    } else {
+        printf("Syntax Error\n");
     }
 
+    fclose(yyin);
     return 0;
 }

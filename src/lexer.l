@@ -36,7 +36,7 @@
 
 [ \t\n\r]+  { /* skip whitespace, no line tracking needed */ }
 
-.           { fprintf(stderr, "Syntax Error\n"); exit(1); }
+.           { printf("Syntax Error\n"); exit(0); }
 
 %%
 
